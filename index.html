@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <title>
@@ -167,22 +169,22 @@
         <div class="container">
             <h2 class="text-h2 section__h2">Відповіді на питання</h2>
             <div class="question_items">
-                <div class="question_item">
-                    <h3 class="text-h3 question_h3 close">Як нас знайти?</h3>
+                <details class="question_item">
+                    <summary class="text-h3 question_h3">Як нас знайти?</summary>
                     <p class="text-p question_p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
-                </div>
-                <div class="question_item">
-                    <h3 class="text-h3 question_h3 open">Як нас знайти?</h3>
+                </details>
+                <details class="question_item">
+                    <summary class="text-h3 question_h3">Як нас знайти?</summary>
                     <p class="text-p question_p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>       
-                </div>
-                <div class="question_item">
-                    <h3 class="text-h3 question_h3 close">Як нас знайти?</h3>
+                </details>
+                <details class="question_item">
+                    <summary class="text-h3 question_h3">Як нас знайти?</summary>
                     <p class="text-p question_p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
-                </div>
-                <div class="question_item">
-                    <h3 class="text-h3 question_h3 close">Як нас знайти?</h3>
+                </details>
+                <details class="question_item">
+                    <summary class="text-h3 question_h3">Як нас знайти?</summary>
                     <p class="text-p question_p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
-                </div>
+                </details>
             </div>
         </div>
     </section>
@@ -263,12 +265,16 @@
                 <div class="contacts__grid-items">
                     <img class="contacts__icon" src="img/location-icon.svg" alt="Location item" >
                     <h3 class="text-h3 contacts__h3">Адреса:</h3>
-                    <h3 class="text-h3 contacts_two__h3">Соборна 1408<br>Соборна 1408</h3>
+                    <h3 class="text-h3 contacts_two__h3">Соборна 1408<br>Офіс 140-143</h3>
                 </div>
                 <div class="contacts__grid-items">
                     <img class="contacts__icon" src="img/phone-icon.svg" alt="Phone item" >
                     <h3 class="text-h3 contacts__h3">Телефон:</h3>
-                    <h3 class="text-h3 contacts_two__h3">8 (099) 9999<br>8 (099) 9999</h3>
+                    <h3 class="text-h3 contacts_two__h3">
+                        <a href="tel:+380999999">8 (099) 9999</a>
+                        <br>
+                        <a href="tel:+380998888">8 (099) 8888</a>
+                    </h3>
                 </div>
                 <div class="contacts__grid-items">
                     <img class="contacts__icon" src="img/clock-icon.svg" alt="Clock item" >
@@ -278,7 +284,8 @@
                 <div class="contacts__grid-items">
                     <img class="contacts__icon" src="img/mail-icon.svg" alt="Mail item" >
                     <h3 class="text-h3 contacts__h3">Ел.пошта:</h3>
-                    <h3 class="text-h3 contacts_two__h3">Соборна 1408<br>Соборна 1408</h3>
+                    <h3 class="text-h3 contacts_two__h3"> 
+                    <a href="mailto:OBronson@mail.com">OBronson@mail.com</a></h3>
                 </div>
             </div>
         </div>
@@ -292,5 +299,7 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
