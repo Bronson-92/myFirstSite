@@ -382,7 +382,7 @@ body {
 .contacts__icon {
     width: 50px;
     height: 50px;
-    margin: 0 auto 15px;
+    margin: 15px auto 15px;
 }
 .contacts__h3 {
     color: var(--grey-color);
@@ -911,4 +911,23 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
         max-height: 45%;
         border-radius: 0;
         will-change: bottom, opacity;
+      }
+
+      .materialboxed {
+        display: block;
+        cursor: -webkit-zoom-in;
+        cursor: zoom-in;
+        position: relative;
+        -webkit-transition: opacity .4s;
+        transition: opacity .4s;
+        -webkit-backface-visibility: hidden;
+      }
+      
+      .materialboxed:hover:not(.active) {
+        opacity: .8;
+      }
+      
+      .materialboxed.active {
+        cursor: -webkit-zoom-out;
+        cursor: zoom-out;
       }
